@@ -1,3 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Базовая разметка HTML</title>
+    <meta name="description" content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля.">
+    <meta name="og:title" content="Code Basics: основы программирования">
+    <meta name="og:description" content="Бесплатные практические уроки по программированию для тех, кто начинает с нуля.">
+    <meta name="og:image" content="/images-header.png">
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" sizes="64x64">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <form action="/search">
+        // Данные, после заполнения, будут отправлены на страницу /search
+        <input type="text">
+        <br>
+        <br>
+        <input id="html1" type="checkbox">
+        <label for="html1">Хочу изучать HTML</label>
+        <input id="html2" type="checkbox">
+        <label for="html2">Хочу изучать CSS</label>
+        <br>
+        <br>
+      </form>
+      <form>
+        <label>
+            <input type="checkbox">
+            Хочу изучать HTML
+        </label>
+    </form>
+    <form>
+        <label>
+            <input type="checkbox" name="languages" value="HTML">
+            Хочу изучать HTML
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="CSS">
+            Хочу изучать CSS
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="JS">
+            Хочу изучать JS
+        </label>
+    </form>
+    <form action="/people">
+        <label>
+            <input type="checkbox" name="languages" value="HTML">
+            Хочу изучать HTML
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="languages" value="CSS">
+            Хочу изучать CSS
+        </label>
+    </form>
+    <form action="/people">
+        <label>
+            <input type="radio" name="gender" value="yes">
+            Да
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="gender" value="no">
+            Нет
+        </label>
+    </form>
+    <form action="/people">
+        <textarea rows="4" cols="30">textarea с 5 строками и 30 столбцами</textarea>
+    </form>
+    <br>
+    <br>
+    <form>
+        <select>
+            <option disabled>Какой курс вы хотите пройти?</option>
+            <option>JS</option>
+            <option>PHP</option>
+            <option>Java</option>
+            <option>Racket</option>
+            <option>HTML</option>
+            <option>CSS</option>
+        </select>
+    </form>
+    <br>
+    <br>
+    <form>
+        <select multiple>
+              <option>JS</option>
+              <option>PHP</option>
+              <option>Java</option>
+              <option>Racket</option>
+              <option>HTML</option>
+              <option>CSS</option>
+        </select>
+    </form>
+    <h2>Форма поиска</h2>
+    <form>
+    <label>
+        Введите ваш запрос
+        <input type="text">
+    </label>
+    <select>
+        <option>В каком разделе искать?</option>
+        <option>JS</option>
+        <option>HTML</option>
+        <option>CSS</option>
+    </select>
+    <button>Искать</button>
+    </form>
 <table>
     <thead> <!-- Блок с заголовками -->
         <tr> <!-- Строка -->
@@ -91,3 +200,10 @@
 </video>
 <br>
 <br>
+<video src="https://www.w3schools.com/html/movie.mp4" width="320" height="240" controls></video>
+<br>
+<br>
+<h1>Code Basics</h1>
+<p>Бесплатные уроки по программированию и HTML для новичков</p>
+</body>
+</html>
