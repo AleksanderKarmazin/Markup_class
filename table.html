@@ -31,6 +31,11 @@
         body{
         background-color: rgb(248, 185, 185); /* Цвет фона веб-страницы */
         } 
+        /* CSS */
+        .paragraph {
+        color: #1814e6
+        /* Правило color устанавливает цвет текста. В данном случае это серый цвет со значением #333333 */
+        }
     </style>
 </head>
 <body>
@@ -41,6 +46,8 @@
         <p style="background-color:#ff9900" align="center">Параграф имеет оранжевый фон.</p>
         <p style="background-color:#417ed0" align="center">Параграф имеет синий фон.</p>
         <p style="font-size: 40px; color: blue; background-color: rgb(243, 19, 168);"   align="center">Первое изменение стиля с помощью CSS</p>
+        <p class="paragraph">Текст нашего параграфа. Именно с помощью класса paragraph в CSS будут устанавливаться свойства для этого блока текста</p>
+        
     
         <section class="callback-form">
             <h2>Оставить заявку</h2>
@@ -49,6 +56,19 @@
             </form>
         </section>
     </main>
+    <div style="border: solid 3px;">
+        У блока появится рамка шириной 1 пиксель
+    
+        <p>А у параграфа рамки не будет. При необходимости она устанавливается отдельно</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="font-size: 20px;">
+        Размер шрифта, которым написан этот текст — 20 пикселей.
+    
+        <p  style="font-size: 10px"> Вложенный параграф также будет иметь размер шрифта 20 пикселей.</p>
+    </div>
 
     
 
