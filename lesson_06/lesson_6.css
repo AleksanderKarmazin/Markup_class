@@ -1,0 +1,45 @@
+
+body {
+    counter-reset: sum;
+}
+
+#a:checked { counter-increment: sum 64;}
+#b:checked { counter-increment: sum 16;}
+#c:checked { counter-increment: sum -32;}
+#d:checked { counter-increment: sum 128;}
+#e:checked { counter-increment: sum 4;}
+#i:checked { counter-increment: sum -8;}
+
+.sum::before {content: '= ' counter(sum);}
+
+.container {
+    /* Предотвращаем налезание элементов */
+    min-width: 700px;
+    white-space: nowrap;
+}
+
+.left,
+.center,
+.right { display:inline-block;
+white-space: normal;
+vertical-align: top;
+}
+
+.left{
+    background: rgb(206, 149, 149);
+    width: 16%; 
+    margin-left: 2%;
+}
+
+.center{
+    background: rgb(245, 202, 123);
+    width: 16%; 
+    margin-left: 2%;
+}
+
+.right{
+    background: rgb(145, 135, 236);
+    width: 16%; 
+    margin-left: 2%;
+}
+
