@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="BCH.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--  main navigation menu -->
+<header class="header">
+    <div class="container-fluid" id="portalRootMenu">
+    <div class="navbar">
+        <div class="navbar-header">
+            <button type="button" class="btn navbar-toggle collapsed hidden-md hidden-lg" aria-controls="headerNavbar" data-target="#headerNavbar" data-toggle="drawer">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://trunk.businesschain.io/portal">
+                <span class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="90" viewBox="0 0 55 90" data-inject-url="https://trunk.businesschain.io/img/logo-ico.svg" class="img-injectable icon-logo icon-svg"><lineargradient id="a--inject-1" gradientUnits="userSpaceOnUse" x1="58.289" y1="50.118" x2="11.907" y2="23.34"><stop offset="0" class="stop-color-primary" stop-color="#ff5629"></stop><stop offset="1" class="stop-color-primary-2" stop-color="#ffb92c"></stop></lineargradient><path d="M22.807 5.701V42.44h10V30.385l10.808 5.746.487 18.998-7.296 4.457V70.17l14.304-8.756c1.367-.846 2.258-2.357 2.209-3.964l-.685-24.191c-.049-1.607-1.03-3.065-2.446-3.827l-17.382-9.296V5.701c0-2.677-2.323-4.867-5-4.867-2.676-.001-4.999 2.19-4.999 4.867z" fill="url(#a--inject-1)"></path><lineargradient id="b--inject-1" gradientUnits="userSpaceOnUse" x1="43.361" y1="67.259" x2="-2.563" y2="40.745"><stop offset="0" class="stop-color-primary" stop-color="#ff5629"></stop><stop offset="1" class="stop-color-primary-2" stop-color="#ffb92c"></stop></lineargradient><path d="M22.807 48.44v13.937l-11.508-6.241-.681-18.998 8.188-5.129V21.426L3.732 30.854c-1.367.846-2.1 2.357-2.051 3.964l.781 24.191c.049 1.607.883 3.065 2.299 3.827l18.046 9.735V84.3c0 2.677 2.323 4.867 5 4.867s5-2.19 5-4.867V48.44h-10z" fill="url(#b--inject-1)"></path></svg>
+                    
+BusinessChain
+
+                </span>
+                <span class="font-size-base">(TEST)</span>
+            </a>
+                <a href="https://trunk.businesschain.io/login-portal" class="btn btn-default btn-sm btn-login hidden-md hidden-lg">Вход</a>
+        </div>
+        <div id="headerNavbar" class="navbar-header-collapse navbar-collapse collapse" aria-expanded="false">
+            <div class="navbar-content" style="transition-duration: 0ms;">
+                <div class="navbar-body">
+                    <div class="navbar-collapse-container"> 
+                        <!--только в ЛК, дублируем меню сайдбара-->
+                        <!--только в ЛК-->
+                        <!-- header-nav -->
+                        <nav class="header-nav" id="headerNav" data-current-level="0">
+                            <ul class="nav navbar-nav nav-header">
+                         <!-- узел без детей -->
+                        <li>
+                            <a href="" id="menu_projectList">Проекты</a>
+                        </li>
+                         <!-- узел без детей -->
+                        <li>
+                            <a href="" id="menu_expertsList">Эксперты</a>
+                        </li>
+                         <!-- узел без детей -->
+                        <li>
+                            <a href="" id="menu_acceleratorList">Акселераторы</a>
+                        </li>
+                         <!-- узел без детей -->
+                        <li>
+                            <a href="https://trunk.businesschain.io/investorList" id="menu_investorList">Инвесторы</a>
+                        </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- TOGGLE header-search-->
+                    <!-- lang-switcher -->
+                    <div class="lang-switcher">
+                        <form action=" ">
+                            <div class="btn-group bootstrap-select sidebar-level-dropdown bs-selected-hidden selected" style="width: 100%;"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" title="ru"><span class="filter-option pull-left">ru</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><div class="sidebar-header hidden-desktop"><button type="button" class="btn navbar-toggle btn-back-level"><svg class="icon-sprite" width="20px" height="20px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons-sprite-default.svg#chevron-prev"></use></svg></button><h3 class="title">Изменить язык</h3></div><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">ru</span><span class="icon-checkbox  check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">en</span><span class="icon-checkbox  check-mark"></span></a></li></ul></div><select name="lang" data-placeholder="Изменить язык" data-hide-selected="true" class="sidebar-level-dropdown" data-level-title="Изменить язык" tabindex="-98">
+                            <option value="ru" selected="selected">ru</option><option value="en">en</option></select></div>
+                        </form>                     
+                    </div>
+                     <!-- Гость -->
+                        <a href="https://trunk.businesschain.io/login-portal" class="btn btn-default btn-sm btn-login">
+                            <span class="visible-desktop">Вход</span>
+                            <span class="hidden-desktop">Вход в систему</span>
+                        </a>
+                        <a href="https://trunk.businesschain.io/registrateUser" class="btn btn-primary btn-sm btn-register">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="globalError" class="alert alert-global alert-danger container-fluid text-center" role="alert" style="display:none">Сервер недоступен. Возможно он выключен или возникли проблемы со связью.</div>
+    <div id="globalWarning" class="alert alert-global alert-warning container-fluid text-center" role="alert" style="display:none">
+    </div>
+</header>
+</body>
+</html>
+
