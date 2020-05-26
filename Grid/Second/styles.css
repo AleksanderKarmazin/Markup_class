@@ -1,0 +1,52 @@
+
+body {
+display: grid;
+grid-template-areas:
+/*Здесь мы из областей строим структуру сетки а внизу обзовём по классу каждую 
+область и будем ею управлять */
+“header header header”
+“nav article ads”
+“footer footer footer”;
+grid-template-rows: 60px 1fr 60px;
+/*Первая и третья строки — обе в 60px высотой, 
+а вторая строка забирает все оставшееся место.*/
+grid-template-columns: 20% 1fr 15%;
+/* Первый столбец равен 20%, а третий 15%. 
+Второй же забирает все оставшееся место. */
+grid-gap: 10px;
+height: 100vh;
+margin: 0;
+
+background: gold;
+
+}
+
+#grid > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
+  grid-gap: 5px;
+  }
+
+
+/*Теперь мы можем назначить каждую из этих грид-областей каждому элементу:*/
+
+#pageHeader {
+grid-area: header;
+}
+/*Свойство grid-area это сокращение свойства, 
+которое позволяет вам размещать грид-элементы в гриде. 
+В нашем случае, мы просто отсылаемся к названиям, 
+которые мы предварительно указали в grid-template-areas.*/
+#pageFooter {
+grid-area: footer;
+}
+#mainArticle {
+grid-area: article;
+}
+#mainNav {
+grid-area: nav;
+}
+#siteAds {
+grid-area: ads;
+}
